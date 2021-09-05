@@ -7,7 +7,8 @@
   "module": "dist/iso-alpha2.js",
   "types": "dist/iso-alpha2.d.ts",
   "scripts": {
-    "prepare": "node --loader ts-node/esm ./prepare.ts"
+    "prepare": "node --loader ts-node/esm ./prepare.ts",
+    "postversion": "npm publish"
   },
   "repository": {
     "type": "git",

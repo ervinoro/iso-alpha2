@@ -27,3 +27,6 @@ RUN  apt-get update \
 
 # [Optional] Uncomment if you want to install more global node modules
 RUN su node -c "npm install -g add-local-binaries-to-path"
+
+# https://blog.npmjs.org/post/118393368555/deploying-with-npm-private-modules
+RUN su node -c "echo '//registry.npmjs.org/:_authToken=\${NPM_TOKEN}' > /home/node/.npmrc"
