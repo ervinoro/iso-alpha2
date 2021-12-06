@@ -1,7 +1,7 @@
 {
   "name": "iso-alpha2",
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/iso-alpha2.js",
   "module": "dist/iso-alpha2.js",
